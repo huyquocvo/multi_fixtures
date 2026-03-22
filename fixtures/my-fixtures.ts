@@ -17,7 +17,7 @@ export const test = base.extend<MyFixtures>({
     const userData = { name: 'root', password: 'admin123456789' };
     await use(userData);
     // Teardown phase: (optional) clean up resources after the test runs
-    console.log('Tearing down user data');
+    console.log('This is tear down');
   },
 
   // Fixture 2: authenticated page (depends on `page` fixture, can depend on `user`)
