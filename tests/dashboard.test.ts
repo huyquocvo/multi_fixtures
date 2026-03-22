@@ -1,7 +1,5 @@
 import { test, expect } from '../fixtures/my-fixtures';
-
 // tests/dashboard.spec.ts
-
 test('should display user name on dashboard', async ({ authenticatedPage, user }) => {
   // 'authenticatedPage' is an already logged-in page
   // 'user' is the user data
