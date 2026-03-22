@@ -1,2 +1,0 @@
-Logged out after test
-Tearing down user data
