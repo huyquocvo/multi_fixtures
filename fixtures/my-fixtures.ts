@@ -33,7 +33,8 @@ export const test = base.extend<MyFixtures>({
     await use(page);
 
     // Teardown phase: (optional) perform logout
- //  await page.click('[data-testid="logout-button"]');
+    await page.getByRole('button',{name: 'User Menu'}).click();
+    await page.getByRole('link', {name:'Log out'}).click();
     console.log('Logged out after test');
   },
 });

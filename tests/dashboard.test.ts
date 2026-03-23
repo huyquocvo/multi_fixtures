@@ -11,4 +11,5 @@ test('another test using the same fixtures', async ({ authenticatedPage }) => {
   await authenticatedPage.getByRole('button',{name: 'User Menu'}).click();
   await authenticatedPage.getByRole('link', { name: 'Edit Account' }).click()
   await expect(authenticatedPage.getByRole('heading',{name:'Users: Edit Profile'})).toBeVisible();
+  await authenticatedPage.getByRole('button',{ name: 'Close', exact: true }).click();
 });
