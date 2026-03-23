@@ -62,7 +62,8 @@ export default defineConfig({
      {
       name: 'Microsoft Edge',
       use: {
-        channel: 'msedge', // Specifies the Microsoft Edge browser channel
+        ...devices['Desktop Edge'],
+        channel: 'msedge', // Supported channels are 'msedge', 'msedge-beta', 'msedge-dev', 'msedge-canary'
       },
     },
 
