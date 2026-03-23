@@ -18,6 +18,7 @@ export const test = base.extend<MyFixtures>({
     await use(userData);
     // Teardown phase: (optional) clean up resources after the test runs
     console.log('This is tear down');
+    console.log(`End time: ${new Date()}`);
   },
 
   // Fixture 2: authenticated page (depends on `page` fixture, can depend on `user`)
@@ -36,6 +37,7 @@ export const test = base.extend<MyFixtures>({
     await page.getByRole('button',{name: 'User Menu'}).click();
     await page.getByRole('link', {name:'Log out'}).click();
     console.log('Logged out after test');
+    console.log(`End time: ${new Date()}`);
   },
 });
 
