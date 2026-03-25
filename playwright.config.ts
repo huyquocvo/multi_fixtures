@@ -59,13 +59,13 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-     {
-      name: 'msedge',
-      use: {
-        ...devices['Desktop Edge'],
-        channel: 'msedge', // Supported channels are 'msedge', 'msedge-beta', 'msedge-dev', 'msedge-canary'
-      },
-    },
+    //  {
+    //   name: 'msedge',
+    //   use: {
+    //     ...devices['Desktop Edge'],
+    //     channel: 'msedge', // Supported channels are 'msedge', 'msedge-beta', 'msedge-dev', 'msedge-canary'
+    //   },
+    // },
 
     /* Test against mobile viewports. */
     // {
