@@ -60,7 +60,7 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
      {
-      name: 'Microsoft Edge',
+      name: 'msedge',
       use: {
         ...devices['Desktop Edge'],
         channel: 'msedge', // Supported channels are 'msedge', 'msedge-beta', 'msedge-dev', 'msedge-canary'
